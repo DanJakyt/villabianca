@@ -1,0 +1,185 @@
+<!-- FOOTER PER IL COPYRIGHT-->
+
+<style>
+    * {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      transition: .2s linear;
+    }
+
+    footer {
+      background: #10221b;
+      color: white;
+      padding: 4rem 2rem;
+    }
+
+    .footer-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 2rem;
+    }
+
+    .footer-brand {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #219150;
+    }
+
+    .footer-brand small {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 4rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links div h4 {
+      font-size: 1.6rem;
+      color: #219150;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links ul li {
+      margin-bottom: .5rem;
+    }
+
+    .footer-links ul li a {
+      color: rgba(255,255,255,0.8);
+      font-size: 1.4rem;
+    }
+
+    .footer-links ul li a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.3rem;
+      color: rgba(255,255,255,0.7);
+      padding-top: 1rem;
+    }
+
+    .footer-bottom a {
+      color: rgba(255,255,255,0.7);
+    }
+
+    .footer-bottom a:hover {
+      color: #219150;
+    }
+
+    .footer-btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      border: 0.2rem solid #219150;
+      color: #219150;
+      background: transparent;
+      font-size: 1.4rem;
+      border-radius: 5px;
+    }
+
+    .footer-btn:hover {
+      background: #219150;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .footer-top {
+        flex-direction: column;
+      }
+      .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Creato da Daniele Martini</div>
+          <small>Qualità, chiarezza e cura del dettaglio</small>
+        </div>
+        <div>
+          <a href="mailto:supporto@esempio.it" class="footer-btn">Supporto</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>Prodotto</h4>
+          <ul>
+            <li><a href="#">Funzionalità</a></li>
+            <li><a href="#">Prezzi</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Supporto</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="mailto:supporto@esempio.it">Email supporto</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Azienda</h4>
+          <ul>
+            <li><a href="#">Chi siamo</a></li>
+            <li><a href="#">Contatti</a></li>
+            <li><a href="#">Lavora con noi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legale</h4>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookie</a></li>
+            <li><a href="#">Termini</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Daniele Martini. Tutti i diritti riservati.</span>
+        <span>
+          <a href="#">Mappa del sito</a> | 
+          <a href="#">Accessibilità</a> | 
+          <a href="#">Versione 1.0</a>
+        </span>
+      </div>
+
+    </div>
+  </footer>
