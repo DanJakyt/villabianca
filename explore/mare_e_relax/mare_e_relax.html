@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Bianca | MARE E RELAX</title>
+
+    <link rel="stylesheet" href="mare_e_relax.css">
+
+    <!-- Shortcut per inserire l'icona nel profilo del sito: inserire il logo di villa bianca -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+    <a href="../explore.html" class="btn-back-home">Back to explore</a>
+
+    <h1 class="heading">Mare e Relax</h1>
+
+    <section class="about1" id="about1">
+
+        <div class="image">
+            <img src="images/senigallia.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Spiagge di Velluto</h3>
+            <p>
+                Le spiagge di velluto di Senigallia sono un vero gioiello della Riviera Adriatica. Sabbia finissima e dorata si stende per chilometri, morbida sotto i piedi e perfetta per lunghe passeggiate al tramonto. Il mare è limpido e rassicurante, ideale per nuotare o semplicemente lasciarsi cullare dalle onde. Lungo la costa, stabilimenti balneari accoglienti si alternano a tratti più liberi, creando un equilibrio perfetto tra relax e servizi. Passeggiando sul lungomare, tra locali, gelaterie e bar, si percepisce l’atmosfera vivace ma mai caotica di questa città, capace di unire il fascino marinaro alla comodità moderna. Senigallia non è solo spiaggia: è esperienza, lentezza, bellezza che avvolge tutti i sensi.
+            </p>
+            
+        </div>
+
+    </section>
+
+    <section class="about2" id="about2">
+
+        <div class="image">
+            <img src="images/gommone.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Escursioni in barca</h3>
+            <p>
+                Noleggiare un gommone lungo le coste marchigiane è il modo perfetto per scoprire angoli nascosti e panorami mozzafiato che pochi riescono a vedere da terra. Dalle spiagge dorate e tranquille fino a scogliere frastagliate e calette segrete, ogni tratto di costa racconta una storia diversa, tra mare cristallino e riflessi dorati del sole. L’affitto di un gommone offre libertà totale: puoi partire al mattino per un’escursione di qualche ora, fermarti dove il cuore ti guida, fare snorkeling o semplicemente goderti il vento e il silenzio dell’acqua aperta. Per chi cerca avventura e relax allo stesso tempo, questa esperienza regala un contatto diretto con la natura, lontano dalla folla e immerso nella bellezza autentica delle Marche. Perfetto sia per famiglie che per gruppi di amici, è un modo unico per vivere il mare in totale autonomia, con la sicurezza e il comfort garantiti dai servizi locali.
+            </p>
+            
+        </div>
+
+    </section>
+
+    <section class="about1" id="about1">
+
+        <div class="image">
+            <img src="images/riscio.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Risciò lungomare</h3>
+            <p>
+                Percorrere il lungomare di Senigallia a bordo di un risciò è un modo originale e divertente per vivere la città da una prospettiva diversa. Mentre la brezza marina accarezza il viso, si può ammirare la sabbia dorata delle Spiagge di Velluto, i locali vivaci e le passeggiate animate da artisti di strada e musicisti. Il risciò permette di muoversi lentamente, senza fretta, assaporando ogni dettaglio del lungomare: le biciclette che sfrecciano, i profumi di gelaterie e bar, il ritmo tranquillo della vita marittima. È un’esperienza perfetta per coppie, famiglie o gruppi di amici, combinando turismo sostenibile e divertimento, con la possibilità di fermarsi ovunque catturi lo sguardo o la curiosità. Attraverso questo piccolo viaggio su tre ruote, Senigallia si rivela non solo una meta balneare, ma un luogo da vivere, esplorare e ricordare.
+            </p>
+            
+        </div>
+
+    </section>
+
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("../../footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+    
+
+
+
+
+
+</body>
+</html>

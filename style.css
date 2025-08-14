@@ -44,8 +44,7 @@ header .logo
   cursor: pointer;
 }
 
-.showcase
-{
+.showcase {
   position: absolute;
   right: 0;
   width: 100%;
@@ -54,10 +53,13 @@ header .logo
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('media/home.avif') no-repeat center center;
+  background-size: cover;
   transition: 0.5s;
   z-index: 2;
 }
+
 .showcase.active
 {
   right: 300px;
@@ -160,3 +162,31 @@ header .logo
   color: #5a5a5a; 
 }
 
+/* Per schermi fino a 768px (tablet e smartphone) */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 20px; /* riduce il padding */
+  }
+
+  .showcase {
+    padding: 50px 20px; /* riduce lo spazio intorno al contenuto */
+  }
+
+  .text h2 {
+    font-size: 3em; /* riduce titolo principale */
+  }
+
+  .text h3 {
+    font-size: 2em; /* riduce sottotitolo */
+  }
+
+  .text p {
+    font-size: 1em; /* riduce testo */
+    max-width: 100%; /* occupa tutta la larghezza disponibile */
+  }
+
+  .text a {
+    padding: 8px 20px;
+    font-size: 0.9em;
+  }
+}

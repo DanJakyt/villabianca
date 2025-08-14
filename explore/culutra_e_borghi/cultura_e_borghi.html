@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Bianca | CULTURA E BORGHI</title>
+
+    <link rel="stylesheet" href="cultura_e_borghi.css">
+
+    <!-- Shortcut per inserire l'icona nel profilo del sito: inserire il logo di villa bianca -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+    <a href="../explore.html" class="btn-back-home">Back to explore</a>
+
+    <h1 class="heading">Cultura e Borghi</h1>
+
+    <section class="about1" id="about1">
+
+        <div class="image">
+            <img src="images/corinaldo.webp" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Corinaldo</h3>
+            <p>
+                Corinaldo è un gioiello medievale che incanta per le sue mura perfettamente conservate e il centro storico pittoresco. Salendo fino alla piazza principale, il panorama sulla campagna marchigiana regala un senso di pace e bellezza senza tempo. Le torri, i vicoli stretti e le antiche fontane raccontano storie di un passato affascinante, mentre eventi culturali e tradizionali animano il borgo con colori e sapori autentici. Corinaldo è ideale per chi vuole immergersi nell’atmosfera delle Marche più storiche, con un’esperienza che unisce storia, cultura e passeggiate panoramiche.
+            </p>
+            
+        </div>
+
+    </section>
+
+    <section class="about2" id="about2">
+
+        <div class="image">
+            <img src="images/ostra.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Ostra</h3>
+            <p>
+                Ostra è un borgo marchigiano che sorprende chi ama scoprire angoli autentici e meno conosciuti. Passeggiando tra le sue stradine medievali, tra piazzette tranquille e scorci panoramici, si percepisce il fascino di un luogo che ha mantenuto intatta la sua identità. Chiese storiche, antichi palazzi e botteghe artigiane raccontano storie di un passato ricco e suggestivo. Ostra è perfetta per chi cerca un’esperienza lenta, lontana dal turismo di massa, e vuole assaporare la vita di un borgo marchigiano tra cultura, arte e piccoli piaceri locali.
+            </p>
+            
+        </div>
+
+    </section>
+
+    <section class="about1" id="about1">
+
+        <div class="image">
+            <img src="images/rocca.JPG" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Senigallia</h3>
+            <p>
+                Senigallia è famosa per le sue Spiagge di Velluto e per un lungomare vivace che unisce mare, cultura e divertimento. Qui si possono alternare giornate di relax sulla sabbia dorata a passeggiate tra locali, gelaterie e mercatini. Il centro storico, con le sue piazze e i palazzi eleganti, offre scorci suggestivi, mentre eventi culturali, concerti e sagre arricchiscono l’esperienza dei visitatori. Senigallia è un luogo dove il fascino marittimo incontra la comodità moderna, perfetto per famiglie, coppie o chiunque voglia vivere il mare in tutte le sue sfumature.
+            </p>
+            
+        </div>
+
+    </section>
+
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("../../footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+    
+
+
+
+
+
+</body>
+</html>
