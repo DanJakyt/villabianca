@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+/* Reset e stili base */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #10221b;
+}
+
+body {
+  background: #fff;
+  color: #10221b;
+}
+
+/* Bottoni */
+.btn-back-home {
+  margin: 2rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  border-radius: 5px;
+  color: #10221b;
+  cursor: pointer;
+  background: white;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+
+.btn-back-home:hover {
+  background: #10221b;
+  color: white;
+}
+
+/* Titoli */
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+
+.heading-bottom {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 2rem;
+  color: #10221b;
+  text-transform: none;
+}
+
+/* Sezione contatti */
+section.contacts {
+  padding: 5rem 9%;
+}
+
+.contacts .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); /* più largo */
+  gap: 2rem;
+}
+
+.contacts .box {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: transform .3s;
+}
+
+.contacts .box:hover {
+  transform: translateY(-1rem);
+}
+
+.contacts .box img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.contacts .box h3 {
+  font-size: 2rem;
+  color: #219150;
+  margin-bottom: 1rem;
+}
+
+.contacts .box p {
+  font-size: 1.5rem;
+  color: #10221b;
+  line-height: 2;
+  text-transform: none;
+  word-wrap: break-word;
+}
+
+.contacts .box p strong {
+  color: #000;
+  white-space: nowrap; /* i numeri non vanno a capo */
+}
+
+/* Footer */
+#footer {
+  margin-top: 5rem;
+}
+
+/* Responsive */
+@media (max-width:1200px){
+  section.contacts {padding: 5rem 5%;}
+}
+
+@media (max-width:768px){
+  html {font-size:55%;}
+}
+
+@media (max-width:480px){
+  html {font-size:50%;}
+  .contacts .box img {height: 8rem; width: 8rem;}
+  .contacts .box h3 {font-size:1.8rem;}
+  .contacts .box p {font-size:1.4rem;}
+}

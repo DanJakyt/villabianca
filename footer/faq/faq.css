@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* SEZIONE UNIFICATA FAQ */
+.faq-full {
+  background: #10221b; /* verde scuro */
+  color: rgba(255,255,255,0.9);
+  min-height: 100vh;
+  padding: 60px 15%;
+}
+
+/* Titolo e descrizione */
+.faq-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #219150;
+  margin-bottom: 15px;
+}
+
+.faq-header p {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Singola FAQ */
+.faq {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 15px 20px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.faq h3:hover {
+  background: rgba(255,255,255,0.08);
+  color: #219150;
+}
+
+.faq p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.8);
+  padding: 0 20px 15px;
+  display: none; /* nascosto di default */
+}
+
+/* Stato aperto */
+.faq.active p {
+  display: block;
+}
+
+/* Icona + e - */
+.faq h3::after {
+  content: '+';
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.faq.active h3::after {
+  content: '-';
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-full {
+    padding: 40px 20px;
+  }
+  .faq-header h2 {
+    font-size: 2rem;
+  }
+  .faq-header p {
+    font-size: 1rem;
+  }
+  .faq h3 {
+    font-size: 1.2rem;
+  }
+}

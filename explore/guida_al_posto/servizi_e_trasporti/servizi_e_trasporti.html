@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Bianca | Servizi e Trasporti</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="servizi_e_trasporti.css">
+</head>
+<body>
+
+    <a href="../../explore.html" class="btn-back-home">Back to explore</a>
+
+    <section class="transport">
+        <h1 class="heading">Servizi e Trasporti</h1>
+        <h2 class="heading-bottom">Scopri aeroporti, stazioni, trasporti pubblici e servizi di mobilità</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/aeroporti.png" alt="Aeroporti">
+                <h3>Aeroporti</h3>
+                <p>
+                    <strong>Ancona:</strong> Aeroporto Raffaello Sanzio (AOI) – Falconara Marittima <br>
+                    <strong>Perugia:</strong> Aeroporto San Francesco d'Assisi <br>
+                    <strong>Bologna:</strong> Aeroporto Guglielmo Marconi <br>
+                    <strong>Roma:</strong> Aeroporto Fiumicino (FCO), Aeroporto Ciampino (CIA)
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/treni.png" alt="Stazioni ferroviarie">
+                <h3>Stazioni Ferroviarie</h3>
+                <p>
+                    <strong>Senigallia:</strong> Stazione FS – Linea Adriatica <br>
+                    <strong>Marotta-Mondolfo:</strong> Stazione FS <br>
+                    <strong>Ancona:</strong> Stazione Centrale FS <br>
+                    <strong>Pesaro:</strong> Stazione FS
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/metro.png" alt="Trasporto urbano e metropolitano">
+                <h3>Trasporto Urbano</h3>
+                <p>
+                    <strong>Ancona:</strong> Linee urbane Conerobus <br>
+                    <strong>Pesaro:</strong> Trasporto urbano Adriabus <br>
+                    <strong>Senigallia:</strong> Linee locali – Conerobus
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/autobus.png" alt="Autobus">
+                <h3>Autobus</h3>
+                <p>
+                    <strong>Conerobus:</strong> Linee extraurbane per tutta la provincia di Ancona <br>
+                    <strong>Adriabus:</strong> Collegamenti con Pesaro e Fano <br>
+                    <strong>FlixBus:</strong> Collegamenti nazionali e internazionali da Ancona, Senigallia e Pesaro
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/sharing.png" alt="Sharing e Noleggio">
+                <h3>Sharing & Noleggio</h3>
+                <p>
+                    <strong>Auto:</strong> Hertz, Europcar, Avis (Ancona e Pesaro) <br>
+                    <strong>Bici:</strong> Bike sharing comunale a Senigallia e Pesaro <br>
+                    <strong>Monopattini:</strong> Helbiz, Bit Mobility (Pesaro)
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+        fetch("../../../footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+
+</body>
+</html>

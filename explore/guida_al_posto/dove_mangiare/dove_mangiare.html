@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Bianca | Dove Mangiare</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="dove_mangiare.css">
+</head>
+<body>
+
+    <a href="../../explore.html" class="btn-back-home">Back to explore</a>
+
+    <section class="category">
+        <h1 class="heading">Dove Mangiare</h1>
+        <h2 class="heading-bottom">Scopri ristoranti, bar, pasticcerie e gelaterie nei dintorni</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/ristoranti.png" alt="Ristoranti Tipici">
+                <h3>Ristoranti Tipici</h3>
+                <p>
+                    <strong>Ripe:</strong> Trattoria La Rocca, Osteria del Borgo <br>
+                    <strong>Trecastelli:</strong> Ristorante La Torre, Osteria del Gusto <br>
+                    <strong>Ostra:</strong> Locanda del Tempo, Ristorante al Castello <br>
+                    <strong>Senigallia:</strong> Ristorante Il Pescatore, La Pergola <br>
+                    <strong>Corinaldo:</strong> Trattoria della Piazza, Osteria San Francesco
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/bar_pasticcerie.png" alt="Bar e Pasticcerie">
+                <h3>Bar e Pasticcerie</h3>
+                <p>
+                    <strong>Ripe:</strong> Caffè del Borgo, Pasticceria Nobile <br>
+                    <strong>Trecastelli:</strong> Bar Centrale, Pasticceria dei Colli <br>
+                    <strong>Ostra:</strong> Pasticceria Antica, Bar del Mercato <br>
+                    <strong>Senigallia:</strong> Pasticceria Stazione, Caffè Garibaldi <br>
+                    <strong>Corinaldo:</strong> Bar della Rocca, Pasticceria La Torre
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/gelaterie.png" alt="Gelaterie">
+                <h3>Gelaterie</h3>
+                <p>
+                    <strong>Ripe:</strong> Gelateria Artigiana La Dolce Vita <br>
+                    <strong>Trecastelli:</strong> Gelateria Tre Colli <br>
+                    <strong>Ostra:</strong> Gelateria del Corso <br>
+                    <strong>Senigallia:</strong> Gelateria Giolitti, Cremeria del Porto <br>
+                    <strong>Corinaldo:</strong> Gelateria della Piazza
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+        fetch("../../../footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+
+</body>
+</html>

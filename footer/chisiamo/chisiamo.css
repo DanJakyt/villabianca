@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* SEZIONE CHI SIAMO FULL SCREEN */
+.about-full {
+  background: #10221b; /* verde scuro uniforme */
+  color: rgba(255,255,255,0.9);
+  min-height: 100vh;
+  padding: 60px 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titolo e descrizione */
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #219150;
+  margin-bottom: 15px;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.6;
+}
+
+/* Box Google Maps */
+.map-box {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-full {
+    padding: 40px 20px;
+  }
+  .about-header h2 {
+    font-size: 2rem;
+  }
+  .about-header p {
+    font-size: 1rem;
+  }
+}

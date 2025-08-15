@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Bianca | FAQ</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+    
+
+    <!-- SEZIONE UNICA FAQ -->
+    <section class="faq-full">
+        <div class="faq-header">
+            <h2>Domande Frequenti</h2>
+            <p>Trova rapidamente le risposte alle domande più comuni dei nostri ospiti.</p>
+        </div>
+
+        <div class="faq">
+            <h3>Come posso prenotare?</h3>
+            <p>Puoi prenotare direttamente sul nostro sito tramite la sezione “Prenota ora” oppure contattarci via email per un’assistenza personalizzata.</p>
+        </div>
+        
+        <div class="faq">
+            <h3>Quali sono gli orari di check-in e check-out?</h3>
+            <p>Il check-in è disponibile dalle 15:00 alle 20:00. Il check-out va effettuato entro le 10:00.</p>
+        </div>
+
+        <div class="faq">
+            <h3>La casa dispone di Wi-Fi?</h3>
+            <p>Sì, è disponibile una connessione Wi-Fi gratuita e illimitata in tutta la struttura.</p>
+        </div>
+
+        <div class="faq">
+            <h3>Gli animali sono ammessi?</h3>
+            <p>Accettiamo animali di piccola taglia, previo avviso al momento della prenotazione. Potrebbero essere previsti costi aggiuntivi per la pulizia.</p>
+        </div>
+
+        <div class="faq">
+            <h3>È disponibile parcheggio?</h3>
+            <p>Sì, mettiamo a disposizione un parcheggio privato gratuito per tutti gli ospiti.</p>
+        </div>
+    </section>
+
+    <!-- SCRIPT per accordion -->
+    <script>
+        document.querySelectorAll('.faq h3').forEach(item => {
+            item.addEventListener('click', () => {
+                item.parentElement.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

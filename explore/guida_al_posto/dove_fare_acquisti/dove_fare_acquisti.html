@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Bianca | Dove fare acquisti</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="dove_fare_acquisti.css">
+</head>
+<body>
+
+    <a href="../../explore.html" class="btn-back-home">Back to explore</a>
+
+    <section class="category">
+        <h1 class="heading">Dove fare acquisti</h1>
+        <h2 class="heading-bottom">Scopri negozi, mercati e punti vendita nei dintorni</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/supermercati.png" alt="Supermercati">
+                <h3>Supermercati</h3>
+                <p>
+                    <strong>Ripe:</strong> Conad City, Alimentari Rossi <br>
+                    <strong>Trecastelli:</strong> Coop Tre Colli, Eurospin <br>
+                    <strong>Ostra:</strong> Conad Superstore, Market del Borgo <br>
+                    <strong>Senigallia:</strong> IperSimply, Lidl <br>
+                    <strong>Corinaldo:</strong> Supermercato Centrale, Alimentari Belli
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/negozi_tipici.png" alt="Negozi di Prodotti Tipici">
+                <h3>Negozi di Prodotti Tipici</h3>
+                <p>
+                    <strong>Ripe:</strong> La Bottega delle Marche, Sapori Antichi <br>
+                    <strong>Trecastelli:</strong> Tipico e Buono, Antichi Sapori <br>
+                    <strong>Ostra:</strong> Gusti del Borgo, Cantina del Castello <br>
+                    <strong>Senigallia:</strong> Bottega del Mare, Delizie Marchigiane <br>
+                    <strong>Corinaldo:</strong> Sapori di Collina, La Dispensa
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/mercati.png" alt="Mercati e Farmacie">
+                <h3>Mercati e Farmacie</h3>
+                <p>
+                    <strong>Mercati settimanali:</strong> Ripe (sabato), Trecastelli (venerdì), Ostra (giovedì), Senigallia (giovedì e sabato), Corinaldo (lunedì) <br><br>
+                    <strong>Farmacie:</strong> Farmacia Comunale di Ripe, Farmacia Centrale di Trecastelli, Farmacia del Corso a Ostra, Farmacia Internazionale a Senigallia, Farmacia della Rocca a Corinaldo
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+        fetch("../../../footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+
+</body>
+</html>

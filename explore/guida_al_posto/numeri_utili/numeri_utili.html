@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Bianca | Numeri Utili</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="numeri_utili.css">
+</head>
+<body>
+
+    <a href="../../explore.html" class="btn-back-home">Back to explore</a>
+
+    <section class="contacts">
+        <h1 class="heading">Numeri Utili</h1>
+        <h2 class="heading-bottom">Emergenze, servizi e assistenza nella zona di Ripe e dintorni</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/emergenze.png" alt="Emergenze">
+                <h3>Emergenze Nazionali</h3>
+                <p>
+                    <strong>Numero unico emergenze:</strong> <br>112 <br>
+                    <strong>Carabinieri:</strong> <br>112 <br>
+                    <strong>Polizia di Stato:</strong> <br>113 <br>
+                    <strong>Vigili del Fuoco:</strong> <br> 115 <br>
+                    <strong>Emergenza sanitaria:</strong> 118 <br>
+                    <strong>Guardia Costiera:</strong> <br>1530 <br>
+                    <strong>Guardia di Finanza:</strong> <br>117
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/sanita.png" alt="Servizi sanitari">
+                <h3>Servizi Sanitari</h3>
+                <p>
+                    <strong>Guardia Medica – Ripe:</strong> <br>+39 071 123456 <br>
+                    <strong>Ospedale di Senigallia:</strong> <br>+39 071 7901 <br>
+                    <strong>Ospedale di Jesi:</strong><br> +39 0731 5341 <br>
+                    <strong>Farmacia Comunale di Ripe:</strong><br> +39 071 765432 <br>
+                    <strong>Farmacia Centrale di Trecastelli:</strong> <br>+39 071 987654
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/taxi.png" alt="Taxi e Trasporti">
+                <h3>Taxi e Trasporti</h3>
+                <p>
+                    <strong>Taxi Senigallia:</strong> <br>+39 071 7928414 <br>
+                    <strong>Taxi Ancona:</strong> <br>+39 071 43321 <br>
+                    <strong>Taxi Jesi:</strong> <br>+39 0731 208888 <br>
+                    <strong>Stazione FS Senigallia:</strong> <br>+39 071 7921 <br>
+                    <strong>Autolinee Conerobus:</strong><br> +39 071 2837411
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/utilita.png" alt="Servizi e utilità">
+                <h3>Servizi e Utilità</h3>
+                <p>
+                    <strong>Protezione Civile Marche:</strong> <br>+39 071 80671 <br>
+                    <strong>Comune di Trecastelli:</strong> <br>+39 071 79591<br>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script>
+        fetch("../../../footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+
+</body>
+</html>
